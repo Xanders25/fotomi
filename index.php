@@ -70,28 +70,28 @@
 				<div class="content">
 					<header>
 						<h2>Nuestro trabajo</h2>
-						<p>Proximamente...</p>
+						<p>Aqui podeis ver nuestros trabajos en bodas, bautizos, eventos, etc.</p>
 					</header>
 
 					<!-- Gallery  -->
 						<div class="gallery">
 							<article class="from-left">
-								<a href="images/fulls/01.jpg" class="image fit"><img src="images/thumbs/01.jpg" title="The Anonymous Red" alt="" /></a>
+								<a href="images/fulls/01.jpg" class="image fit"><img src="images/thumbs/01.jpg" title="bodas" alt="" /></a>
 							</article>
 							<article class="from-right">
-								<a href="images/fulls/02.jpg" class="image fit"><img src="images/thumbs/02.jpg" title="Airchitecture II" alt="" /></a>
+								<a href="images/fulls/02.jpg" class="image fit"><img src="images/thumbs/02.jpg" title="Bautizos" alt="" /></a>
 							</article>
 							<article class="from-left">
-								<a href="images/fulls/03.jpg" class="image fit"><img src="images/thumbs/03.jpg" title="Air Lounge" alt="" /></a>
+								<a href="images/fulls/03.jpg" class="image fit"><img src="images/thumbs/03.jpg" title="Eventos" alt="" /></a>
 							</article>
 							<article class="from-right">
-								<a href="images/fulls/04.jpg" class="image fit"><img src="images/thumbs/04.jpg" title="Carry on" alt="" /></a>
+								<a href="images/fulls/04.jpg" class="image fit"><img src="images/thumbs/04.jpg" title="Reportajes" alt="" /></a>
 							</article>
 							<article class="from-left">
-								<a href="images/fulls/05.jpg" class="image fit"><img src="images/thumbs/05.jpg" title="The sparkling shell" alt="" /></a>
+								<a href="images/fulls/05.jpg" class="image fit"><img src="images/thumbs/05.jpg" title="En galerias" alt="" /></a>
 							</article>
 							<article class="from-right">
-								<a href="images/fulls/06.jpg" class="image fit"><img src="images/thumbs/06.jpg" title="Bent IX" alt="" /></a>
+								<a href="images/fulls/06.jpg" class="image fit"><img src="images/thumbs/06.jpg" title="Videoconferencias" alt="" /></a>
 							</article>
 						</div>
 
@@ -124,11 +124,11 @@
     //conectar
     $conn = new mysqli('localhost','id12197478_root','root5','id12197478_fotografia');
     
-    if(isset($_GET'name'])) $conn->query("
+    if(isset($_GET['name'])) $conn->query("
             INSERT INTO xanders_form
             (nombre,correo,fecha,mensaje)
             VALUES
-            ('".$_GET['mensaje']."','',NOW(),'');
+            ('".$_GET['name']."','".$_GET['email']."',NOW(),'".$_GET['message']."');
         ");
 ?>
 		<!-- Footer -->
